@@ -12,6 +12,7 @@ export class TsApiLambdaJsStack extends cdk.Stack {
 
     const apigws = new Apigateways(this, "Apigateways", {
       helloLambda: myLambdas.helloLambda,
+      neo4jLambda: myLambdas.neo4jLambda,
     });
   }
 }
